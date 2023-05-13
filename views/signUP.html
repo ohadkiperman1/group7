@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/webStyle.css">
+    <script defer src="../static/scriptJS.js"></script>
+    <title>Sign up</title>
+</head>
+<body id="signUpPage">
+<nav class="nav_bar">
+    <ul>
+        <li><a href="homePage.html">Home</a></li>
+        <li><a href="searchCourt.html">search</a></li>
+        <li><a href="login.html">Log in</a></li>
+        <li><a href="signUP.html">Sign up</a></li>
+        <li><a href="myOrders.html">My Orders</a></li>
+    </ul>
+</nav>
+<div class="middle_container">
+    <h1 class="signUpHead">sign Up here</h1>
+    <div class="form_container">
+        <form class="form_style" id="FormSP">
+            <div class="form_row">
+                <label for="name">First Name:</label>
+                <input type="text" class="input_field" id="first_nameSP" name="first_nameSP" placeholder="First Name"
+                       required><br>
+            </div>
+            <div class="form_row">
+                <label for="name">Last Name:</label>
+                <input type="text" class="input_field" id="last_nameSP" name="lastnameSP" placeholder="Last name"
+                       required><br>
+            </div>
+            <div class="form_row">
+                <label for="email">Email:</label>
+                <input type="email" class="input_field" id="emailSP" name="emailSP" placeholder="Email" required><br>
+            </div>
+            <div class="form_row">
+                <label for="password">Password:</label>
+                <img src="../web_images/hide.png" id=eyeIcon>
+                <input type="password" class="input_field" id="loginPassword" name="passwordSP" placeholder="Password"
+                       required><br>
+            </div>
+            <div class="form_row">
+                <label for="age">Age:</label>
+                <input type="number" class="input_field" id="ageSP" name="ageSP" placeholder="Age" min="0"
+                       max="100"><br>
+            </div>
+            <div class="signUpBT">
+                <button type="submit" id="submitSP">submit</button>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="background-image2"></div>
+<div class="overlay2"></div>
+<footer>
+    <span class="footer-text">Design by Oriya Sheetrit and Ohad Kiperman</span>
+    <i class="fas fa-circle"></i>
+    <span class="footer-text">&copy; 2023 Company Name. All rights reserved.</span>
+</footer>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../static/webStyle.css">
+    <script defer src="../static/scriptJS.js"></script>
+    <title>Login</title>
+</head>
+<body id="login">
+<nav class="nav_bar">
+    <ul>
+        <li><a href="homePage.html">Home</a></li>
+        <li><a href="searchCourt.html">search</a></li>
+        <li><a href="login.html">Log in</a></li>
+        <li><a href="signUP.html">Sign up</a></li>
+        <li><a href="myOrders.html">My Orders</a></li>
+    </ul>
+</nav>
+<div class="middle_container">
+    <h1 class="signUpHead">Login</h1>
+    <div class="form_container">
+        <div class="form_style">
+            <form action="" id="FormLogin">
+                <div class="form_row">
+                    <label for="email">Email:</label>
+                    <input type="email" class="input_field" id="email" name="email" placeholder="Email" required><br>
+                </div>
+                <div class="form_row">
+                    <label>Password:</label>
+                    <img src="../web_images/hide.png" id="eyeIcon">
+                    <input type="password" class="input_field" id="loginPassword" name="password" placeholder="Password"
+                           required><br>
+                </div>
+                <div class="form_row">
+                    <div class="remember_me_container">
+                        <input type="checkbox" id="remember-me">
+                        <label for="remember-me" id="rememberLabel">Remember me</label>
+                    </div>
+                </div>
+                <div class="signUpBT">
+                    <button type="submit">Log in</button>
+                </div>
+                <div class="form_row">
+                    <div class="options">
+                        <a href="#">Forgot password?</a>
+                        <span class="divider">|</span>
+                        <a href="signUP.html">Sign up</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="background-image2"></div>
+<div class="overlay2"></div>
+<footer>
+    <span class="footer-text">Design by Oriya Sheetrit and Ohad Kiperman</span>
+    <i class="fas fa-circle"></i>
+    <span class="footer-text">&copy; 2023 Company Name. All rights reserved.</span>
+</footer>
+</body>
+</html>
