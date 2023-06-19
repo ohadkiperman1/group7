@@ -1,0 +1,40 @@
+1. pug, mysql2, body-parser, coockie-parser, csvtojson, express,path
+2.
+http://localhost:3000/dropUsersTable
+http://localhost:3000/dropCourtsTable
+http://localhost:3000/dropOrdersTable
+http://localhost:3000/createUsersTable
+http://localhost:3000/createOrdersTable
+http://localhost:3000/createCourtsTable
+http://localhost:3000/showUsersTable
+http://localhost:3000/showCourtsTable
+http://localhost:3000/showOrdersTable
+http://localhost:3000/insertUsersData
+http://localhost:3000/insertCourtsData
+http://localhost:3000/insertOrdersData
+
+3.
+CREATE TABLE IF NOT EXISTS Users (
+        user_id			int(11)			NOT NULL PRIMARY KEY AUTO_INCREMENT,
+        email 				varchar(255) 	NOT NULL PRIMARY KEY ,
+        password			varchar(255) 	NOT NULL,
+        first_Name			varchar(255) 	NOT NULL,
+        last_Name			varchar(255) 	NOT NULL,
+        age					int			    NOT NULL
+        )
+CREATE TABLE orders (
+  order_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  court_name VARCHAR(50),
+  order_date DATE,
+  order_time TIME,
+  city VARCHAR(50),
+  email VARCHAR(255),
+  FOREIGN KEY (email) REFERENCES Users(email)
+)
+CREATE TABLE IF NOT EXISTS Courts (
+        court_id			int(11)		NOT NULL PRIMARY KEY AUTO_INCREMENT,
+       court_name		varchar(255) 	NOT NULL,
+        city			varchar(255) 	NOT NULL,
+        court_size		varchar(255) 	NOT NULL,
+        court_kind		varchar(255) 	NOT NULL
+        )
