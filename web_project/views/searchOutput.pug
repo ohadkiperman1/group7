@@ -1,0 +1,19 @@
+extends layout
+block content
+    .output_container
+      h1.page-title Search Results
+      .card-grid
+        each n in courts
+          .card
+            img.card-img-top(src='http://localhost:3000/football' alt='Court Image')
+            .card-body
+              h5.card-title= n.court_name
+              p.card-text= `${n.city}, ${n.court_size}, ${n.court_kind}`
+              p.card-text
+                span.bold-text(style='font-weight: bold; font-size: larger') #{n.date}  #{n.startTime}
+              a.btn.btn-primary(href=`/bookOrder?courtName=${n.court_name}&startTime=${n.startTime}&city=${n.city}&date=${n.date}`) Book Now
+
+
+    .background-image2
+    .overlay2
+

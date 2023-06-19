@@ -1,0 +1,24 @@
+extends layout
+block content
+  .container
+    .orders
+      h2 My Orders
+      table.my-table
+        thead
+          tr
+            th Name
+            th Date
+            th Time
+            th City
+            th
+        tbody
+          each n in myOrders
+            tr
+              td= n.court_name
+              td= n.order_date.toLocaleDateString('en-US', { dateStyle: 'short' })
+              td= n.order_time
+              td= n.city
+              td
+                a.cancel-btn(href=`/cancelOrder?orderId=${n.order_id}`) Cancel
+  .background-image2
+  .overlay2

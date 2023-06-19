@@ -1,0 +1,31 @@
+extends layout
+block content
+  .middle_container
+    h1.signUpHead sign Up here
+    .form_container
+      form#FormSP.form_style(action='/formHandler' method='post')
+        .form_row
+          label(for='first_name') First Name:
+          input#first_nameSP.input_field(type='text' name='firstnameSP' placeholder='First Name' required='')
+          br
+        .form_row
+          label(for='last_name') Last Name:
+          input#last_nameSP.input_field(type='text' name='lastnameSP' placeholder='Last name' required='')
+          br
+        .form_row
+          label(for='email') Email:
+          input#emailSP.input_field(type='email' name='emailSP' placeholder='Email' required='')
+          br
+        .form_row
+          label(for='password') Password:
+          input#loginPassword.input_field(type='password' name='passwordSP' placeholder='Password' required='')
+          br
+          img#eyeIcon(src='http://localhost:3000/hide')
+        .form_row
+          label(for='age') Age:
+          input#ageSP.input_field(type='number' name='ageSP' placeholder='Age' min='0' max='100')
+          br
+        .signUpBT
+          button#submitSP(type='submit') submit
+  .background-image2
+  .overlay2

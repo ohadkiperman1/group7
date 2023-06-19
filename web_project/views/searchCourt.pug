@@ -1,0 +1,29 @@
+extends layout
+block content
+    h1.page-title Search your court here!
+    .search-container-wrapper
+        .search_container
+            form(action="/searchForm" method='post')
+                label(for='city') City:
+                select#city(name='city')
+                    option(value='') Select a city
+                    option(value='haifa') Haifa
+                    option(value='tel Aviv') Tel Aviv
+                    option(value='jerusalem') Jerusalem
+                    option(value='beer sheva') Beer Sheva
+                label(for='date') Date:
+                input#date(type='date' name='date')
+                label(for='courtSize') Court Size:
+                select#courtSize(name='courtSize')
+                    option(value='') Select a court size
+                    option(value='large') Large
+                    option(value='medium') Medium
+                    option(value='small') Small
+                label(for='court-kind') Court Kind:
+                select#court-kind(name='court_kind')
+                    option(value='') Select a court kind
+                    option(value='indoor') Indoor
+                    option(value='outdoor') Outdoor
+                button.search_courtBT(type='submit') Search
+    .background-image2
+    .overlay2

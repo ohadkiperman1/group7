@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="webStyle.css">
+    <script defer src="scriptJS.js"></script>
+    <title>Find Court</title>
+</head>
+
+<body>
+<nav class="nav_bar">
+    <ul>
+        <li><a href="http://localhost:3000">Home</a></li>
+        <li><a href="http://localhost:3000/searchCourt">search</a></li>
+        <li><a href="http://localhost:3000/login">Log in</a></li>
+        <li><a href="http://localhost:3000/signUP">Sign up</a></li>
+        <li><a href="http://localhost:3000/myOrders">My Orders</a></li>
+    </ul>
+</nav>
+<h1 class="page-title">Search your court here!</h1>
+<div class="search-container-wrapper">
+    <div class="search_container">
+        <form action="http://localhost:3000/searchOutput">
+            <label for="city">City:</label>
+            <select id="city" name="city">
+                <option value="">Select a city</option>
+                <option value="new-york">Haifa</option>
+                <option value="los-angeles">Tel Aviv</option>
+                <option value="chicago">Jerusalem</option>
+                <option value="miami">Beer Sheva</option>
+            </select>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date">
+
+            <label for="court-size">Court Size:</label>
+            <select id="court-size" name="court-size">
+                <option value="">Select a court size</option>
+                <option value="half-court">Large</option>
+                <option value="full-court">Medium</option>
+                <option value="full-court">Small</option>
+            </select>
+
+            <label for="court-kind">Court Kind:</label>
+            <select id="court-kind" name="court-kind">
+                <option value="">Select a court kind</option>
+                <option value="indoor">Indoor</option>
+                <option value="outdoor">Outdoor</option>
+            </select>
+
+            <button type="submit" class="search_courtBT">Search</button>
+        </form>
+
+    </div>
+</div>
+<div class="background-image2"></div>
+<div class="overlay2"></div>
+<footer>
+    <span class="footer-text">Design by Oriya Sheetrit and Ohad Kiperman</span>
+    <i class="fas fa-circle"></i>
+    <span class="footer-text">&copy; 2023 Company Name. All rights reserved.</span>
+</footer>
+</body>
+</html>

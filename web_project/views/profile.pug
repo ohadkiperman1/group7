@@ -1,0 +1,24 @@
+extends layout
+block content
+    .middle_container
+        h1.signUpHead profile
+        .form_container
+            .form_style
+                form(action='/updateProfileForm' method='post')
+                    .form_row
+                        label(for='profileEmail') Email:
+                        input.input_field(type='email' name='profileEmail' placeholder=`${userIsLogged.user_email}` disabled)
+                        br
+                    .form_row
+                        label Password:
+                        input.input_field(type='text' name='profilePassword' value=`${userIsLogged.user_password}` required='')
+                    .form_row
+                        label First Name:
+                        input.input_field(type='text' name='profileFirstName' value=`${userIsLogged.user_name}`  disabled)
+                    .form_row
+                        label Last Name:
+                        input.input_field(type='text' name='profileLastName' value=`${userIsLogged.user_last_name}` disabled)
+                    .signUpBT
+                        button(type='submit') Update
+    .background-image2
+    .overlay2

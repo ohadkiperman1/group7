@@ -1,0 +1,29 @@
+extends layout
+block content
+    .middle_container
+      h1.signUpHead Login
+      .form_container
+        .form_style
+          form#FormLogin(action='/userLogin' method='post')
+            .form_row
+              label(for='email') Email:
+              input#email.input_field(type='email' name='email' placeholder='Email' required='')
+              br
+            .form_row
+              label Password:
+              input#loginPassword.input_field(type='password' name='password' placeholder='Password' required='')
+              br
+              img#eyeIcon(src='http://localhost:3000/hide')
+            .form_row
+              .remember_me_container
+                input#remember-me(type='checkbox')
+                label#rememberLabel(for='remember-me') Remember me
+            .signUpBT
+              button(type='submit') Log in
+            .form_row
+              .options
+                a(href='#') Forgot password?
+                span.divider |
+                a(href='http://localhost:3000/signUP') Sign up
+    .background-image2
+    .overlay2
